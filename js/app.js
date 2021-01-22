@@ -2,6 +2,7 @@
 
 window.addEventListener('DOMContentLoaded', function(){
     
+    /* Tablas de listar */
     var tabla = $('#tabla');
     if(tabla){
         $(function () {
@@ -40,4 +41,30 @@ window.addEventListener('DOMContentLoaded', function(){
     }).buttons().container().appendTo('#tabla_wrapper .col-md-6:eq(0)');
 });
     }
+
+    /* Confirmar password User */
+    var contra = document.getElementById("ccontra"); /* console.log(contra); */
+    if(contra){
+        contra.addEventListener('blur', function(){
+            let con = document.getElementById("contra").value;
+            if(con === contra.value){
+                Swal.fire({
+                    position: 'center-center',
+                    icon: 'success',
+                    title: 'Contraseñas iguales',
+                    showConfirmButton: false,
+                    timer: 1500
+                  })
+            } else {
+                Swal.fire({
+                    position: 'center-center',
+                    icon: 'warning',
+                    title: 'Contraseñas diferentes',
+                    showConfirmButton: false,
+                    timer: 1500
+                  })
+            }
+        });
+    }
+
 });

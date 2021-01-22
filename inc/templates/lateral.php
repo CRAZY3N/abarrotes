@@ -52,7 +52,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="agregar-user" class="nav-link">
                 <i class="nav-icon far fa-plus-square"></i>
                 <p>Agregar Usuarios</p>
               </a>
@@ -62,7 +62,7 @@
 
         <li class="nav-header">PRODUCTOS</li>
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a href="list-prod" class="nav-link">
           <i class="fas fa-box nav-icon"></i>
             <p>Productos
               <i class="fas fa-angle-left right"></i>
@@ -70,7 +70,7 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="../mailbox/mailbox.html" class="nav-link">
+              <a href="list-prod" class="nav-link">
                 <i class="nav-icon far fa-eye" ></i>
                 <p>Ver Productos</p>
               </a>
